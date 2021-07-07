@@ -14,7 +14,7 @@ If you find there are problems running the nudity filter, please navigate to 'C:
                           
 Document redaction for PDFs and DOCXs currently only supports images.  For PDFs you can elect to skip the first page of a document to preserve headers and letterheads.
                           
-**IMPORTANT** Document redaction will leave a copy of BOTH the redacted and unredacted document in the output folder.  The examiner will need to delete unwanted versions manually. pteREDECTool makes this easier by renaming redacted documents with the prefiX 'REDACTED-'.
+**IMPORTANT** Document redaction will leave a copy of BOTH the redacted and unredacted document in the output folder.  The examiner will need to delete unwanted versions manually. pteREDACTool makes this easier by renaming redacted documents with the prefiX 'REDACTED-'.
 
 This project was made possible through the excellent work found below:
 
