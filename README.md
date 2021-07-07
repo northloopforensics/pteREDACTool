@@ -1,6 +1,8 @@
 # pteREDACTool
 Image and Video Redaction Tool for CSAM Investigations
 
+![fullbird (2)](https://user-images.githubusercontent.com/73806121/124686566-fca50300-de98-11eb-94a1-0c3833fbf9db.png)
+
 pteREDACTool is a redaction tool designed to help those working on CSAM investigations.
 The tool is designed to copy the contents of a directory (Source) to a second location (Output) and then delete/redact files in the second directory. It does this in the following order:
 
