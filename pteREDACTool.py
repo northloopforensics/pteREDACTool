@@ -343,7 +343,7 @@ while True:
                           "3. Create Report.", '\n',
                           "If you find there are problems running the nudity filter, please navigate to 'C:/Users/*username*/.NudeNet/' (this is a Hidden folder). If any .onnx files are present with no data, delete the contents of the folder and restart pteREDACTool WITH A STRONG INTERNET CONNECTION and run the nudity filter against a data set.  This will cause the tool to download the needed filter data.",
                           "Document redaction for PDFs and DOCXs currently only supports images.  For PDFs you can elect to skip the first page of a document to preserve headers and letterheads.",
-                          "**IMPORTANT** Document redaction will leave a copy of BOTH the redacted and unredacted document in the output folder.  The examiner will need to delete unwanted versions manually. pteREDECTool makes this easier by renaming redacted documents with the prefiX 'REDACTED-'.", "\n Copyright 2021 North Loop Consulting, LLC", no_titlebar=True, grab_anywhere=True)]
+                          "**IMPORTANT** Document redaction will leave a copy of BOTH the redacted and unredacted document in the output folder.  The examiner will need to delete unwanted versions manually. pteREDACTool makes this easier by renaming redacted documents with the prefiX 'REDACTED-'.", "\n Copyright 2021 North Loop Consulting, LLC", no_titlebar=True, grab_anywhere=True)]
     elif event == 'Ok':
         
         if (values['SOURCE']) != 0:   #copies
