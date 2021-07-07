@@ -19,5 +19,7 @@ Document redaction for PDFs and DOCXs currently only supports images.  For PDFs 
 This project was made possible through the excellent work found below:
 
 https://github.com/notAI-tech/NudeNet
+
 https://github.com/pymupdf/PyMuPDF
+
 https://github.com/PySimpleGUI/PySimpleGUI        
