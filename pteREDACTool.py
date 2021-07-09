@@ -285,7 +285,7 @@ def redact_imagesDOCX():
                             name = info.filename
                                 #print(info)
                             content = inzip.read(info)
-                            if name.endswith((".png", ".jpeg", ".jpg", ".jfif", ".bmp", ".gif")):
+                            if name.endswith((".png", ".jpeg", ".jpg", ".jfif", ".bmp", ".gif", ".PNG", ".JPEG", ".JPG", ".JFIF", ".BMP", ".GIF")):
                                 fmt = name.split(".")[-1]
                                 img = Image.open(io.BytesIO(content))
                                 img = img.convert().filter(blur)
@@ -347,24 +347,24 @@ while True:
     elif event == 'Ok':
         
         if (values['SOURCE']) != 0:   #copies
-            for i in range(100000):
+            for i in range(20):
                 sg.PopupAnimated(sg.DEFAULT_BASE64_LOADING_GIF, message='COPYING...', font='Courier 20', text_color="White", background_color='Grey', transparent_color='Grey', time_between_frames=120)
             copy_folder()
             make_report()
             sg.PopupAnimated(None)
             if (values['IMAGES']) == True:  #deletes images in copy
-                for i in range(100000):
+                for i in range(20):
                     sg.PopupAnimated(sg.DEFAULT_BASE64_LOADING_GIF, message='REDACTING IMAGE FILES...', font='Courier 20', text_color="White", background_color='Grey', transparent_color='Grey', time_between_frames=120)
                 image_delete()
                 window.refresh()
             if (values['VIDEOS']) == True: #deletes videos in copy
-                for i in range(100000):
+                for i in range(20):
                     sg.PopupAnimated(sg.DEFAULT_BASE64_LOADING_GIF, message='REDACTING VIDEO FILES...', font='Courier 20', text_color="White",background_color='Grey', transparent_color='Grey', time_between_frames=120)
                 video_delete()
                 sg.PopupAnimated(None)      # close all Animated Popups
                 window.refresh()
             if (values['NUDITY']) == True: #deletes based on nudity level in copy
-                for i in range(100000):
+                for i in range(20):
                     sg.PopupAnimated(sg.DEFAULT_BASE64_LOADING_GIF, message='REDACTING NUDITY, THIS TAKES SOME TIME...', font='Courier 20', text_color="White", background_color='Grey', transparent_color='Grey', time_between_frames=120)
                 subfolders, files = run_fast_scandir(values['OUTPUT'], ImageExts)
                 run_fast_scandir(values['OUTPUT'], ImageExts)
@@ -372,19 +372,19 @@ while True:
                 sg.PopupAnimated(None)      # close all Animated Popups
                 window.refresh()
             if (values['HASH']) == True: #deletes base on a list of provided md5 hashes
-                for i in range(100000):
+                for i in range(20):
                     sg.PopupAnimated(sg.DEFAULT_BASE64_LOADING_GIF, message='REDACTING BASED ON MD5...', font='Courier 20', text_color="White", background_color='Grey', transparent_color='Grey', time_between_frames=120)
                 md5_remove()
                 sg.PopupAnimated(None)      # close all Animated Popups
                 window.refresh()
             if (values['PDF']) == True:
-                for i in range(100000):
+                for i in range(20):
                     sg.PopupAnimated(sg.DEFAULT_BASE64_LOADING_GIF, message='REDACTING PDF CONTENT...', font='Courier 20', text_color="White", background_color='Grey', transparent_color='Grey', time_between_frames=120)
                 redact_PDF()
                 sg.PopupAnimated(None)      # close all Animated Popups
                 window.refresh()
             if (values['DOCX']) == True:
-                for i in range(100000):
+                for i in range(20):
                     sg.PopupAnimated(sg.DEFAULT_BASE64_LOADING_GIF, message='REDACTING DOCUMENT CONTENT...', font='Courier 20', text_color="White", background_color='Grey', transparent_color='Grey', time_between_frames=120)
                 redact_imagesDOCX()
                 sg.PopupAnimated(None)      # close all Animated Popups
